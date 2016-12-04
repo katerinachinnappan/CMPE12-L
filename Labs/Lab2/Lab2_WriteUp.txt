@@ -1,0 +1,36 @@
+CMPE 12L
+Digital Logic
+Katerina Chinnappan
+Email: kachinna@ucsc.edu
+Student ID: 1512312
+Lab section #23367
+
+
+
+Description/Purpose
+
+In this lab we learned how registers and MUX works. We learned how to
+build a register, full adders and invert bits. Even though I didnt' quite get the result
+I wanted, I still understood the flow of logic.
+
+
+Procedure
+
+First, I built a 6 bit register which meant I had 6 D-flip flops. Each flip flop was controlled
+by a clock, and a rest button. The flip flops were connected to two 7 segment LED which displayed the data.
+I then built 6 full bit adders, and connected them to the register as well.
+I didn't quite finish building the MUX.
+
+Challenges
+
+This lab was pretty challenging. I had a lot of issues setting up this lab
+and connecting things together. It was hard for me to understand for a long time how
+things work but now I understand even though my lab still doesn't quite work.
+
+Conclusion
+
+Basically, this was a very challenging lab. The most challenging part was to set up the MUX anc connectg all
+the components together. Setting up the register and full adders was quite simple, however the subtraction part was prettty
+challenging. I now know how a computer adds and subtracts numbers and how easy it is for a computer and how hard it is for me.
+
+
