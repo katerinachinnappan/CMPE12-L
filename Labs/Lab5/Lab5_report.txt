@@ -1,0 +1,55 @@
+Katerina Chinnappan
+Lab5
+Lab Report
+
+Intro Part1:
+This lab was quite difficult due to the fact that we didn't get much
+help or explanation. I started off by mapping my switches, leds and 
+buttons to their accoring registers.
+Once I got that done, I esablished:
+
+LED1-LED8 belong to PORTE
+SW1-SW-4  belong to PORTD
+BTN1-BTN4 belong to PORTF and PORTD
+
+Setup Part1:
+In order to enable the LED input (1) and output(0) I needed
+to clear out TRISE (tells us whether input or output) using TRISECLR
+with 1111 1111 because we have 8 LED. I did the same for PORTE.
+Then I set PORTE to 1111 1111 using PORTESET.
+
+I do the same for TRISD.
+
+Switches:
+For switches 1-4, I first shift PORTD to the right by 8 to get out
+the bits 8,9,10,11 for SW1-SW4 and for LED1-LED4. I then and immediate
+store with 0000 1111 which represents SW1-SW4 to turn on LED1-LED4.
+Then store the address of PORTE in the shifted register.
+
+Buttons:
+BTN1 is in PORTF. So I first shift PORTF to the left by 3 to get to
+BTN1 bit. Then I and immediate with 0001 0000, the one is the BTN1 for
+LED5. Then store address of PORTE in the shifted register.
+
+BTN2-BTN4: No more shifting needs to be done, so just and immediate
+PORTD with 1110 0000 and continue looping.
+
+Intro Part2:
+Part 2 was a little bit more tricky. For part 2 I needed to shift 
+left, and shift right in order to make the led light on back and forth in
+a loop. My $a0 delay speed was 0x800 (someone in piazza said it's lit,and
+that's true.)
+
+Setup Part2:
+I used exactly the same setup as in part2.
+My for loop looks like this (delay and end_delay for right and left shift) 
+(i = 0; i < speed; i++){shift left until== to 1000 0000, then 
+break from loop and go to right shift. shift right 
+until == 0000 0001, then break from loop and go to left shift.)
+
+MAGIC!
+
+Conclusion:
+Lab was difficult, wish we got more help/understanding about MIPS
+and UNO32. But it's all working so I'm happy. 
+ 

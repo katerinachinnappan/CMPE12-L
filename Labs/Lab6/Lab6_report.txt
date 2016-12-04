@@ -1,0 +1,29 @@
+Katerina Chinnappan
+kachinna
+Lab 6
+
+Intro:
+This lab took me faster than lab 3. I started
+off with loading the string into a register,
+fetching one byte at a time (char at a time),
+processing that char, incrementing my output string 
+and loading in the next char.
+basically do everything the same like in lab 3,
+except now the string is terminated by \0, so
+I compare my char to ascii value of \0 which is
+0 so I used register $zero.
+
+In My binary,
+I basically load in my mask, 1 followed by 31 0s.
+I also intitialize my counter to 0. I shift to the
+logical right of the mask by the amount of the counter.
+Then i and my mask with the integer and store that in the 
+digit. Then i say if the digit is a 0, print 0
+otherwise print 1. In both of my print one and print zero
+I load in the output binary string , store the lsb of my registe where
+0 and 1 is and write the result to output binary string.
+Loop back to binary until all 32 bits are overwritten.
+
+END.
+DONE.
+DONEEEEEEEEEEEEE
