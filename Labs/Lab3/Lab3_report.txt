@@ -1,0 +1,35 @@
+Katerina Chinnappan
+kachinna@ucsc.edu
+Lab 3
+
+Intro
+I have learned how to use LC3 instructions. I learned that GETC allows user
+to input only one char at a time, so I needed to use loops in order to let user 
+to enter multiple chars at one time.
+
+Algorithms
+I have broken down my code into many blocks/procedures. I have used
+the JSR control instruction because it is similar to C/Java.
+Basically, the subroutine is separate from the program, and 
+at one point when we say JSR MULTIPLICATOPN, this means that call
+the MULTIPLICATION procedure (no conditions), execute code in MULTIPLICATION
+and return back to the original procedure. I found this a simple way
+to undergo conditions. However, this meant I had to keep my r7 clear.
+Converting to two's complement was easy, just inverting (NOT) user input
+and adding a 1 to the result.
+
+MASK
+I had a very hard time understanding the bit mask operation needed
+in this lab and I watched many videos and read many documentations on this topic.
+Basically, we need the bit mask in order to go through the binary
+string and tell us where there are 1. We use 16 masks because our
+binary output is 16 bit. I use R2 to load the MASK into, and then I must
+create a loop which will AND each of the mask value with my stored value.
+Basically, if I get a positive value (first bit should be 0), I add 1 to my counter and repeat
+the process with the remaining 15 masks until there are none left.
+
+Conclusion
+Overall, this was a pretty tough lab and I had to use many resources
+and watch various online lecture. I also don't like the explanation of MASK
+I found so I had to deduce the meaning behind it myself which was really frustrating
+but I am glad now that I understand it. 
