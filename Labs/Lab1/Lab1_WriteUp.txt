@@ -1,0 +1,56 @@
+CMPE 12L
+Digital Logic
+Katerina Chinnappan
+Email: kachinna@ucsc.edu
+Student ID: 1512312
+Lab section #23367
+
+
+Description/Purpose
+
+In this lab we learned about MultiMedia Logic, how to use it and how to simulate a simple 
+logic schematic. We also learned about the AND, NAND, OR, XOR, NOT gates and truth tables. 
+We learned how to convert truth tables into Boolean expressions. 
+
+Procedure
+
+In order to correctly build the logical circuits using the MML tool, I first drew some 
+diagrams on paper to have an outline. I then translated the picture onto MML. I added some 
+switches, LED (outputs) some gates (AND, NAND, OR, XOR, NOT) and connected them with wires. 
+I also checked that my output is correct by turning on and off the switches and watching the 
+lights. For example, for the truth table part, I turned on an off some switches and made sure the LED was functioning property 
+according to the given truth table. 
+
+Challenges
+
+Some challenges encountered in this lab was with the logic and flow of the circuits. Part D, 
+theguessing game was a bit challenging for me. I had to draw couple of diagrams so I would 
+get the logic right and I would use proper gates. 
+
+Lab Questions
+1)	Think about how you would make the digit display if you didn’t have one. Write out
+how you would approach doing so. 
+
+Since this digit is an 8 segmental LED, (8 segments) I would use LED’S and light them up the 
+same way as the digit would work. That would be more complex and require more logic but it 
+could still work.
+
+
+2)	Make some sort of guess on how that random number generator works? How can things be 
+really random in a computer with logic gates being so, well, logical? 
+
+In my opinion the random number generator works in such way that is dependent on the exact 
+timing of the electric signals. Basically they can’t be random since each output has an 
+algorithm behind it. I think of it as pseudo-numbers which produce a special kind of number 
+sequence that appears to us to be random. 
+
+Conclusion 
+
+Overall I got the logic and how the gates work. At first it was a little confusing but I got
+it after all. The truth table wasn’t so hard to draw out. The random number generator was a 
+little challenging since I could play with the logic but it turned out to work fine. 
+
+
+
+
+
